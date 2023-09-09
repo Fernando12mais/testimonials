@@ -130,6 +130,7 @@ function generateCard({
   infoHeaderContainer.append(personName, personInfo);
 
   img.src = picture;
+  img.alt = `picture from ${name}`;
   if (online) img.classList.add("border-purple");
   infoHeaderContainer.classList.add("card-header-info");
   cardBody.classList.add("card-body");
